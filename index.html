@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ENCRIPTADOR DE TEXTO</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="botones.css">
+        <link rel="stylesheet" href="footer.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <section class="container">
+            <div class="box_1">
+                <textarea name="texto" class="textArea" required placeholder="Ingresa tu texto.." oninput="convertirAMinusculas(event)"></textarea>
+                <div class="botones">
+                    <input type="button" class="btn-encriptar" onclick="vacio(); retornoImagen(); encriptar()" id="btn-encriptar" value="Encriptar">
+                    <input type="button" class="btn-desencriptar" onclick="vacio(); cambiarImagen(); desencriptar()" id="btn-desencriptar" value="Desencriptar">
+                    <input type="button" class="limpiar" value="Limpiar" onclick="limpiar()">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="contenido-imagen">
+                    <img src="images/desen.png" id="imagen">
+                </div>
+                <textarea placeholder="Codigo encriptado" disabled class="mensajeResultado" name="mensaje" ></textarea>        
+                <div class="botones">
+                    <input class="copiar" type="button" value="Copiar texto" onclick="copiar()">
+                </div>
+                        
+            </div>
+
+        </section>
+
+        <footer class="footer">
+            <p class="copyright">&copy; By Jhon Machado | 2023 - alura</p>
+        </footer>
+            
+
+        <script src="index.js"></script>
+        
+
+    </body>
+
+</html>

@@ -1,0 +1,84 @@
+.botones{
+    display: flex;
+    margin-top: 10px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.btn-encriptar{
+    width: 26%;
+    background: #ef0f2d;
+    border: 1px solid #cb0f35;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    height: 50px;
+    margin-left: 30px;
+}
+
+.btn-desencriptar{
+    width: 26%;
+    background: #D8DFE8;
+    border: 1px solid #adaeb0;
+    border-radius: 10px;
+    color: #02336e;
+    cursor: pointer;
+    height: 50px;
+    margin-left: 20px;
+}
+.limpiar{
+    width: 26%;
+    background: #eadd4a;
+    border: 1px solid #dcc619;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    height: 50px;
+    margin-left: 20px;
+}
+
+.box .copiar{
+    display: block;
+    background: #3a3838;
+    border: 1px solid #363434;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    height: 40px;
+    margin: auto;
+    resize: none;
+    width: 60%;
+    margin-bottom: 10px;
+}
+@media only screen and (max-width: 768px) {
+    .btn-encriptar{
+        width: 20%;
+        height: 30px;
+        font-size: 10px;
+        border-radius: 5px;
+    }
+    .btn-desencriptar{
+        width: 20%;
+        border-radius: 5px;
+        height: 30px;
+        font-size: 10px;
+    }
+    .limpiar{
+        width: 20%;
+        height: 30px;
+        font-size: 10px;
+        border-radius: 5px;
+    }
+    .box .copiar{
+        border-radius: 5px;
+        height: 25px;
+        width: 40%;
+        background-color: #dcc619;
+        border: 1px solid #dcc619;
+        color: black;
+    }
+    .botones{
+        display: block;
+        align-self: center;
+    }
+}
